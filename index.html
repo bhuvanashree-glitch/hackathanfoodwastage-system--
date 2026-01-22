@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Waste Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Food Waste Reduction System</h1>
+
+    <div class="card">
+        <h2>Enter Daily Food Details</h2>
+
+        <input type="date" id="date" required>
+        <input type="number" id="prepared" placeholder="Food Prepared (kg)" required>
+        <input type="number" id="served" placeholder="Food Served (kg)" required>
+
+        <button onclick="addRecord()">Add Record</button>
+    </div>
+
+    <div class="card">
+        <h2>Food Wastage Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Prepared (kg)</th>
+                    <th>Served (kg)</th>
+                    <th>Wasted (kg)</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
